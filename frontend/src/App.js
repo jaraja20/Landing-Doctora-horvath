@@ -11,6 +11,7 @@ import { Offer } from "@/components/Offer";
 import { Pricing } from "@/components/Pricing";
 import { Stats } from "@/components/Stats";
 import { Authority } from "@/components/Authority";
+import { Projects } from "@/components/Projects";
 import { Audience } from "@/components/Audience";
 import { Trajectory } from "@/components/Trajectory";
 import { CtaFooter } from "@/components/CtaFooter";
@@ -62,6 +63,7 @@ function App() {
         <Pricing t={t} />
         <Stats t={t} />
         <Authority t={t} />
+        <Projects t={t} />
         <Audience t={t} />
         <Marquee items={t.marquee} slow dark />
         <Trajectory t={t} />

@@ -36,6 +36,8 @@
 - Contenido alineado al PDF oficial "HORVATH GLOBAL HEALTH STRATEGY" (21 ago 2026): taglines, historia de origen MVC, acrónimo, logros, credenciales.
 - Sección "Asesorías estratégicas" con 2 tickets con precio (brief de la doctora, 21 ago 2026): Conversación Estratégica USD 350 / Evaluación de Viabilidad USD 1.500 (destacada, "Recomendado"). Identidad propia de la sección: Poppins, azul #1818FF, fondo blanco. CTAs a WhatsApp con mensaje prellenado por ticket.
 - Autoridad demostrada ampliada a 15 hitos (21 ago 2026): único lab en exportar muestras humanas a −180°C, pliego DINAVISA, único en procesar stem cells, primer estudio Fase III publicado en Paraguay (Medigen/FCM-UNA).
+- Sección "Proyectos" (21 ago 2026): galería editorial masonry con 9 fotos reales (kickoff MVC Fase III FCM-UNA×Medigen, reclutamiento 1.000 participantes, vocería Fundación Tesãi/Itaipú, delegación Corea del Sur, reactivos in vitro, tanque de nitrógeno Marken −180°C, puesto COVID aeropuerto Silvio Pettirossi, equipo 80% mujeres, lab alta complejidad) + franja "En los medios" con recortes reales de La Nación, Última Hora y ABC Color. Fotos en /frontend/public/assets/gallery/.
+- NOTA: 1 foto del RAR salió corrupta (0 bytes): "Mejor proyecto por la caf por Py.jpeg" — pedir reenvío si se quiere usar.
 
 ## Verificación (21 ago 2026)
 - Backend /api/ responde OK; frontend 200.
