@@ -9,6 +9,7 @@ import { About } from "@/components/About";
 import { Method } from "@/components/Method";
 import { Offer } from "@/components/Offer";
 import { Stats } from "@/components/Stats";
+import { Authority } from "@/components/Authority";
 import { Audience } from "@/components/Audience";
 import { Trajectory } from "@/components/Trajectory";
 import { CtaFooter } from "@/components/CtaFooter";
@@ -58,6 +59,7 @@ function App() {
         <Method t={t} />
         <Offer t={t} />
         <Stats t={t} />
+        <Authority t={t} />
         <Audience t={t} />
         <Marquee items={t.marquee} slow dark />
         <Trajectory t={t} />

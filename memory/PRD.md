@@ -21,17 +21,19 @@
 - Visitantes: farmacéuticas, biotech, diagnóstico in vitro, inversores en salud.
 
 ## Implementado (21 ago 2026)
-- Hero kinético con reveal línea por línea + parallax scroll (foto real de laboratorio).
+- Hero kinético con reveal línea por línea + parallax scroll (foto real de laboratorio). Titular oficial: "Los proyectos en salud no fracasan por falta de ciencia. Fracasan por falta de estructura."
 - Marquee con los 4 pilares (Estructurar • Alinear • Ejecutar • Consolidar).
-- Sobre mí (foto bata blanca + cita serif + tags).
-- Método PRECEDENT™ (4 pilares numerados 01-04 + "se aplica en" + 4 errores).
+- Sobre mí (foto bata blanca + cita serif + tags de credenciales: Máster Dir. Ejecutiva de Proyectos, Harvard, MSc Toxicología España).
+- Método PRECEDENT™: 4 pilares numerados 01-04 + desglose del acrónimo P-R-E-C-E-D-E-N-T (9 letras, del PDF oficial) + "se aplica en" + 4 errores.
 - ¿Qué ofrecemos? (6 tarjetas) + Experiencias (3 servicios, CTA "Consultar →" a WhatsApp).
 - Stats: +40 años, 80% mujeres, Fase III, Harvard.
+- Autoridad demostrada: 12 logros del PDF oficial (CT-COV-31/34, +1.000 participantes, AUE, ensayo Solidarity OMS, laboratorio aeropuerto, GCP-ICH, Fundación Tesãi, etc.).
 - Para quién es (pills de audiencia).
 - Trayectoria (timeline sticky con foto libro Harvard).
 - CTA final cyan + footer con WhatsApp/Instagram/mail.
 - SEO básico: title, meta description, OG tags, favicon SVG "H".
 - data-testid en todos los elementos interactivos.
+- Contenido alineado al PDF oficial "HORVATH GLOBAL HEALTH STRATEGY" (21 ago 2026): taglines, historia de origen MVC, acrónimo, logros, credenciales.
 
 ## Verificación (21 ago 2026)
 - Backend /api/ responde OK; frontend 200.
