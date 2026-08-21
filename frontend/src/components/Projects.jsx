@@ -1,3 +1,4 @@
+import { ArrowUpRight } from "lucide-react";
 import { Reveal, Overline } from "./Reveal";
 
 export const Projects = ({ t }) => (
@@ -41,6 +42,19 @@ export const Projects = ({ t }) => (
             </Reveal>
           ))}
         </div>
+        <Reveal delay={0.1}>
+          <div className="mt-10 flex flex-col gap-4">
+            <p className="text-xs uppercase tracking-[0.25em] text-white/50">{t.projects.pressLinksLabel}</p>
+            {t.projects.pressLinks.map((l, i) => (
+              <a key={l.url} href={l.url} target="_blank" rel="noopener noreferrer" data-testid={`press-link-${i + 1}`}
+                className="group inline-flex flex-wrap items-baseline gap-x-3 gap-y-1 text-sm sm:text-base text-white/70 hover:text-cyanlight transition-colors duration-300">
+                <ArrowUpRight size={15} strokeWidth={1.75} className="text-cyan shrink-0 translate-y-0.5" />
+                <span className="font-semibold text-white">{l.outlet}</span>
+                <span className="font-light group-hover:underline underline-offset-4">{l.title}</span>
+              </a>
+            ))}
+          </div>
+        </Reveal>
       </div>
     </div>
   </section>

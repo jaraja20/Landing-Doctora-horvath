@@ -38,6 +38,7 @@
 - Autoridad demostrada ampliada a 15 hitos (21 ago 2026): único lab en exportar muestras humanas a −180°C, pliego DINAVISA, único en procesar stem cells, primer estudio Fase III publicado en Paraguay (Medigen/FCM-UNA).
 - Sección "Proyectos" (21 ago 2026): galería editorial masonry con 9 fotos reales (kickoff MVC Fase III FCM-UNA×Medigen, reclutamiento 1.000 participantes, vocería Fundación Tesãi/Itaipú, delegación Corea del Sur, reactivos in vitro, tanque de nitrógeno Marken −180°C, puesto COVID aeropuerto Silvio Pettirossi, equipo 80% mujeres, lab alta complejidad) + franja "En los medios" con recortes reales de La Nación, Última Hora y ABC Color. Fotos en /frontend/public/assets/gallery/.
 - NOTA: 1 foto del RAR salió corrupta (0 bytes): "Mejor proyecto por la caf por Py.jpeg" — pedir reenvío si se quiere usar.
+- Links de prensa integrados (21 ago 2026): la trayectoria 2021-2022 ahora refleja su rol real confirmado por las fuentes (Project Manager y representante local de Medigen/Taiwán, primer Fase III del país, EUA DINAVISA 2022, publicación en revista Vaccine). Sección prensa suma "Cobertura completa" con links clicables: ABC Color, Informatepy (entrevista exclusiva), FCM-UNA (publicación en Vaccine), MSPBS (aprobación uso de emergencia). Pendiente: 2 share.google no abrieron (Informatepy "llegada de 2.000 dosis" y uno sin identificar), y un video de Facebook (403).
 
 ## Verificación (21 ago 2026)
 - Backend /api/ responde OK; frontend 200.
