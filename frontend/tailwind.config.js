@@ -19,6 +19,7 @@ module.exports = {
         cyanlight: '#A8ECF2',
         indigobrand: '#303AB2',
         pinkbrand: '#FF94CA',
+        corp: '#1818FF',
         background: 'hsl(var(--background))',
         foreground: 'hsl(var(--foreground))',
         card: {
@@ -55,7 +56,8 @@ module.exports = {
       },
       fontFamily: {
         sans: ['Onest', 'sans-serif'],
-        serif: ['"Source Serif 4"', 'serif']
+        serif: ['"Source Serif 4"', 'serif'],
+        display: ['Poppins', 'sans-serif']
       },
       keyframes: {
         'accordion-down': {

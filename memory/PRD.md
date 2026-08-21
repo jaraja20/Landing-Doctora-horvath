@@ -34,6 +34,8 @@
 - SEO básico: title, meta description, OG tags, favicon SVG "H".
 - data-testid en todos los elementos interactivos.
 - Contenido alineado al PDF oficial "HORVATH GLOBAL HEALTH STRATEGY" (21 ago 2026): taglines, historia de origen MVC, acrónimo, logros, credenciales.
+- Sección "Asesorías estratégicas" con 2 tickets con precio (brief de la doctora, 21 ago 2026): Conversación Estratégica USD 350 / Evaluación de Viabilidad USD 1.500 (destacada, "Recomendado"). Identidad propia de la sección: Poppins, azul #1818FF, fondo blanco. CTAs a WhatsApp con mensaje prellenado por ticket.
+- Autoridad demostrada ampliada a 15 hitos (21 ago 2026): único lab en exportar muestras humanas a −180°C, pliego DINAVISA, único en procesar stem cells, primer estudio Fase III publicado en Paraguay (Medigen/FCM-UNA).
 
 ## Verificación (21 ago 2026)
 - Backend /api/ responde OK; frontend 200.

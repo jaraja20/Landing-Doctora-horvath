@@ -8,6 +8,7 @@ import { Marquee } from "@/components/Marquee";
 import { About } from "@/components/About";
 import { Method } from "@/components/Method";
 import { Offer } from "@/components/Offer";
+import { Pricing } from "@/components/Pricing";
 import { Stats } from "@/components/Stats";
 import { Authority } from "@/components/Authority";
 import { Audience } from "@/components/Audience";
@@ -58,6 +59,7 @@ function App() {
         <About t={t} />
         <Method t={t} />
         <Offer t={t} />
+        <Pricing t={t} />
         <Stats t={t} />
         <Authority t={t} />
         <Audience t={t} />
