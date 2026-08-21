@@ -1,4 +1,7 @@
+import { FlaskConical, Atom, Layers, Activity, ShieldCheck } from "lucide-react";
 import { Reveal, Overline } from "./Reveal";
+
+const icons = [FlaskConical, Atom, Layers, Activity, ShieldCheck];
 
 export const About = ({ t }) => (
   <section id="sobre-mi" className="bg-[#F2F2F2] text-navydeep py-24 lg:py-32" data-testid="about-section">
@@ -12,26 +15,31 @@ export const About = ({ t }) => (
       <div>
         <Reveal><Overline light>{t.about.overline}</Overline></Reveal>
         <Reveal delay={0.08}>
-          <h2 className="mt-4 text-4xl sm:text-5xl font-bold tracking-tight text-navy">{t.about.title}</h2>
+          <h2 className="mt-4 text-4xl sm:text-5xl font-bold tracking-tight text-navy" data-testid="about-title">{t.about.title}</h2>
+          <p className="mt-3 text-base sm:text-lg font-semibold text-indigobrand" data-testid="about-subtitle">{t.about.subtitle}</p>
         </Reveal>
-        <Reveal delay={0.16}>
-          <p className="mt-6 text-base sm:text-lg font-light leading-relaxed text-[#555555]">{t.about.p1}</p>
-          <p className="mt-4 text-base sm:text-lg font-light leading-relaxed text-[#555555]">{t.about.p2}</p>
+        <Reveal delay={0.14}>
+          <p className="mt-6 font-serif italic text-xl sm:text-2xl leading-snug text-navy" data-testid="about-lead">{t.about.lead}</p>
         </Reveal>
-        <Reveal delay={0.22}>
-          <blockquote className="mt-8 border-l-2 border-cyan pl-6 font-serif italic text-xl sm:text-2xl text-navy" data-testid="about-quote">
-            “{t.about.quote}”
-          </blockquote>
+        <Reveal delay={0.2}>
+          <p className="mt-6 text-base font-light leading-relaxed text-[#555555]">{t.about.p1}</p>
+          <p className="mt-4 text-base font-light leading-relaxed text-[#555555]">{t.about.p2}</p>
+          <p className="mt-4 text-base font-light leading-relaxed text-[#555555]">{t.about.p3}</p>
         </Reveal>
         <Reveal delay={0.28}>
-          <p className="mt-6 text-base font-light leading-relaxed text-[#555555]">{t.about.p3}</p>
-        </Reveal>
-        <Reveal delay={0.34}>
-          <div className="mt-8 flex flex-wrap gap-3">
-            {t.about.tags.map((tag) => (
-              <span key={tag} className="text-xs uppercase tracking-widest border border-navy/20 text-navy rounded-full px-4 py-2">{tag}</span>
-            ))}
-          </div>
+          <ul className="mt-9 flex flex-col gap-4">
+            {t.about.credentials.map((c, i) => {
+              const Icon = icons[i % icons.length];
+              return (
+                <li key={c} className="flex items-center gap-4" data-testid={`credential-${i + 1}`}>
+                  <span className="w-11 h-11 rounded-xl bg-white border border-navy/10 shadow-sm flex items-center justify-center shrink-0">
+                    <Icon size={18} strokeWidth={1.5} className="text-indigobrand" />
+                  </span>
+                  <span className="text-sm sm:text-base font-medium text-navydeep">{c}</span>
+                </li>
+              );
+            })}
+          </ul>
         </Reveal>
       </div>
     </div>

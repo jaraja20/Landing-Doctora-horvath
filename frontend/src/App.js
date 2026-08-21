@@ -6,6 +6,7 @@ import { Navbar } from "@/components/Navbar";
 import { Hero } from "@/components/Hero";
 import { Marquee } from "@/components/Marquee";
 import { About } from "@/components/About";
+import { Origin } from "@/components/Origin";
 import { Method } from "@/components/Method";
 import { Offer } from "@/components/Offer";
 import { Pricing } from "@/components/Pricing";
@@ -58,6 +59,7 @@ function App() {
         <Hero t={t} />
         <Marquee items={t.marquee} />
         <About t={t} />
+        <Origin t={t} />
         <Method t={t} />
         <Offer t={t} />
         <Pricing t={t} />
