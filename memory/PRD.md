@@ -57,8 +57,9 @@
 - P2: Analítica (GA4) y dominio propio.
 
 ## Deploy (21 ago 2026)
-- Preparado para Vercel: /app/frontend/vercel.json (buildCommand yarn build, output build, rewrite SPA a index.html).
-- Build de producción verificado: `yarn build` compila OK en ~26s.
+- Preparado para Vercel: /app/frontend/vercel.json (installCommand yarn install, buildCommand yarn build, output build, rewrite SPA a index.html).
+- Build de producción verificado: `yarn build` compila OK.
+- Fix ERESOLVE en Vercel (21 ago 2026): date-fns fijado a ^3.6.0 (react-day-picker 8.10.1 no acepta v4) + installCommand yarn en vercel.json. Requiere pushear package.json + yarn.lock + vercel.json actualizados.
 - deployment_agent: PASS (sin secretos hardcodeados, sin llamadas al backend — la landing es 100% estática).
 - Pasos Vercel: importar repo → Root Directory = `frontend` → framework Create React App (autodetectado) → sin variables de entorno necesarias → Deploy.
 - El backend FastAPI NO se deploya: no se usa (todo el contacto es WhatsApp). Si en el futuro se agrega formulario, deployar backend aparte (Railway/Render) y setear REACT_APP_BACKEND_URL en Vercel.
