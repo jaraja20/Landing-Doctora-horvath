@@ -53,5 +53,12 @@
 - P2: Formulario de contacto con backend + email (Resend) si se quiere más que WhatsApp.
 - P2: Analítica (GA4) y dominio propio.
 
+## Deploy (21 ago 2026)
+- Preparado para Vercel: /app/frontend/vercel.json (buildCommand yarn build, output build, rewrite SPA a index.html).
+- Build de producción verificado: `yarn build` compila OK en ~26s.
+- deployment_agent: PASS (sin secretos hardcodeados, sin llamadas al backend — la landing es 100% estática).
+- Pasos Vercel: importar repo → Root Directory = `frontend` → framework Create React App (autodetectado) → sin variables de entorno necesarias → Deploy.
+- El backend FastAPI NO se deploya: no se usa (todo el contacto es WhatsApp). Si en el futuro se agrega formulario, deployar backend aparte (Railway/Render) y setear REACT_APP_BACKEND_URL en Vercel.
+
 ## Credenciales
 - Sin autenticación. Landing pública. Ver /app/memory/test_credentials.md.
