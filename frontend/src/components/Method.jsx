@@ -1,4 +1,5 @@
 import { Reveal, Overline } from "./Reveal";
+import { Acronym } from "./Acronym";
 
 export const Method = ({ t }) => (
   <section id="metodo" className="bg-navydeep py-24 lg:py-32" data-testid="method-section">
@@ -23,26 +24,7 @@ export const Method = ({ t }) => (
         ))}
       </div>
 
-      <div className="mt-24">
-        <Reveal><Overline>{t.method.acronym.overline}</Overline></Reveal>
-        <Reveal delay={0.08}>
-          <h3 className="mt-4 text-3xl sm:text-4xl font-bold tracking-tight text-white" data-testid="acronym-title">{t.method.acronym.title}</h3>
-        </Reveal>
-        <div className="mt-10">
-          {t.method.acronym.letters.map((item, i) => (
-            <Reveal key={i} delay={i * 0.04}>
-              <div data-testid={`acronym-letter-${i}`}
-                className="group flex items-baseline gap-6 sm:gap-10 border-b border-white/10 py-5 hover:border-cyan/50 transition-colors duration-300">
-                <span className="font-serif text-4xl sm:text-5xl text-cyan w-12 shrink-0">{item.l}</span>
-                <p className="text-lg sm:text-2xl font-light text-white/85 group-hover:text-white transition-colors duration-300">{item.t}</p>
-              </div>
-            </Reveal>
-          ))}
-        </div>
-        <Reveal delay={0.1}>
-          <p className="mt-8 font-serif italic text-xl sm:text-2xl text-cyanlight/90" data-testid="acronym-tagline">{t.method.acronym.tagline}</p>
-        </Reveal>
-      </div>
+      <Acronym t={t} />
 
       <Reveal delay={0.1} className="mt-16 border border-cyan/20 rounded-md p-8 lg:p-10 bg-white/[0.02]">
         <p className="text-sm uppercase tracking-[0.2em] text-cyan font-medium">{t.method.appliesLabel}</p>
