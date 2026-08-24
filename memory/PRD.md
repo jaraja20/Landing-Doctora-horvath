@@ -48,6 +48,20 @@
 - Screenshots: hero ES/EN, about, método, servicios, stats, trayectoria, CTA final — todas renderizan correctamente.
 - Toggle EN cambia todo el copy; botones WhatsApp apuntan a wa.me/595971175353.
 
+## REDISEÑO COMPLETO (24 ago 2026) — según "Horvath Correccion Landing Page.docx"
+La versión anterior (oscura navy/cyan) fue REEMPLAZADA por la propuesta de referencia aprobada por Gabriela:
+- Tema claro: fondo blanco, azul #1818FF, tipografía Poppins en todo el sitio (serif solo en tiles del acróstico), logo personal GH (SVG) en vez de "HORVATH".
+- Multi-página con react-router: / (home), /trayectoria, /precedent. vercel.json ya tiene rewrites SPA.
+- Home: hero (copy aprobado "Ciencia, estrategia y humanidad..." + retrato gabriela-white.jpg + badge CEO) → franja de autoridad (20+ años / Dr.+2 maestrías / Harvard / 40+ años legado) → "Más allá del diagnóstico" → 4 áreas de convergencia → timeline horizontal 5 hitos → banda azul "Liderar también es cuidar" → bloque breve PRECEDENT™ (4 pasos Diagnosticar·Estructurar·Ejecutar·Consolidar + manifiesto, sin precios) → Proyectos (Advanced Science Hub / Health Center / Salud Laboral 360° + stat 30.000+ pacientes pandemia, VERIFICADO por la clienta) → Contenido/prensa (4 links reales) → CTA final → footer © 2026.
+- Menú desplegable "Proyectos y consultoría": PRECEDENT™ (Conocer el sistema), Consultoría rápida USD 350 (60 MIN — confirmado), Diagnóstico estratégico PRECEDENT™ USD 1.500. Desktop hover + mobile hamburguesa expandible.
+- /trayectoria: bio ~90 palabras + inventario completo de credenciales del CV (5 categorías: formación académica, cargos, producción científica, formación ejecutiva, membresías) + galería de casos ejecutados.
+- /precedent: origen + manifiesto + 4 pasos + acróstico completo (componente Acronym estilo flyer, reutilizado) + 4 errores + alcance (5 tipos de proyecto) + tickets de consultoría (componente Pricing reutilizado, 60 min).
+- Eliminado: "Horvath Global Health Strategy™", announce bar, secciones oscuras viejas, "Trabajemos juntas" (tono voseo profesional), "método validado" → "marco de trabajo propio", Harvard wording corregido (FCR Program).
+- Foto mvc-recruit.jpg: formularios de participantes DIFUMINADOS (privacidad, CRÍTICO 4).
+- SEO: title, meta description, OG + JSON-LD schema Person.
+- Sin LinkedIn por ahora (la clienta no tiene URL confirmada).
+- EN: toggle ES/EN completo en las 3 páginas.
+
 ## Backlog priorizado
 - P0: Definir precios/modalidad de los 3 servicios con Gabriela.
 - P0: Revisión de copy línea por línea con Gabriela.

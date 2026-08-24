@@ -55,7 +55,7 @@ module.exports = {
         ring: 'hsl(var(--ring))'
       },
       fontFamily: {
-        sans: ['Onest', 'sans-serif'],
+        sans: ['Poppins', 'sans-serif'],
         serif: ['"Source Serif 4"', 'serif'],
         display: ['Poppins', 'sans-serif']
       },

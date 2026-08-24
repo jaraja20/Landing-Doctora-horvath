@@ -35,14 +35,14 @@
         scroll-behavior: auto;
     }
     body {
-        @apply bg-navydeep text-white font-sans;
+        @apply bg-white text-black font-sans;
         margin: 0;
         -webkit-font-smoothing: antialiased;
         -moz-osx-font-smoothing: grayscale;
     }
     ::selection {
-        background: #3CCBDA;
-        color: #000c3d;
+        background: #1818FF;
+        color: #ffffff;
     }
 }
 
@@ -50,31 +50,6 @@
     [data-debug-wrapper="true"] {
         display: contents !important;
     }
-}
-
-.noise-overlay {
-    position: fixed;
-    inset: 0;
-    z-index: 90;
-    pointer-events: none;
-    opacity: 0.035;
-    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
-}
-
-@keyframes marquee-x {
-    from { transform: translateX(0); }
-    to { transform: translateX(-50%); }
-}
-.animate-marquee {
-    animation: marquee-x 32s linear infinite;
-}
-.animate-marquee-slow {
-    animation: marquee-x 55s linear infinite;
-}
-
-.hero-mask-line {
-    display: block;
-    overflow: hidden;
 }
 
 .lenis.lenis-smooth {
