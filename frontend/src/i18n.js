@@ -110,7 +110,7 @@ export const copy = {
       button: "Contactar",
     },
     footer: {
-      location: "Asunción · Paraguay",
+      location: "Ciudad del Este · Paraguay",
       rights: "© 2026 Dra. Gabriela Horvath · Todos los derechos reservados",
       credit: "Hecho por Tekoha Systems",
     },
@@ -365,7 +365,7 @@ export const copy = {
       button: "Contact",
     },
     footer: {
-      location: "Asunción · Paraguay",
+      location: "Ciudad del Este · Paraguay",
       rights: "© 2026 Dr. Gabriela Horvath · All rights reserved",
       credit: "Built by Tekoha Systems",
     },
