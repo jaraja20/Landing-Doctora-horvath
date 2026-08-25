@@ -15,19 +15,17 @@ export const Footer = () => {
     <footer className="bg-navydeep text-white py-16" data-testid="footer">
       <div className="max-w-7xl mx-auto px-6 lg:px-10 flex flex-col sm:flex-row items-center justify-between gap-12">
         <div className="flex items-center gap-5">
-          <span className="inline-flex bg-white rounded-full p-2 shrink-0">
-            <img src="/assets/logo-stamp.png" alt="Dra. Gabriela Horvath" className="w-20 h-20 sm:w-24 sm:h-24" data-testid="footer-logo" />
-          </span>
+          <img src="/assets/logo-stamp.png" alt="Dra. Gabriela Horvath" className="w-24 h-24 sm:w-28 sm:h-28 rounded-full ring-1 ring-white/15" data-testid="footer-logo" />
           <span className="leading-tight">
             <span className="block text-base font-bold text-white">{t.brand.name}</span>
             <span className="block text-xs text-white/60 mt-0.5">{t.brand.role}</span>
           </span>
         </div>
-        <div className="flex flex-wrap items-center justify-center gap-4">
+        <div className="flex flex-wrap items-center justify-center gap-x-8 gap-y-3">
           {socials.map(({ href, label, Icon, id }) => (
             <a key={id} href={href} target={id === "email" ? undefined : "_blank"} rel="noopener noreferrer" aria-label={label}
               data-testid={`footer-${id}-link`}
-              className="inline-flex items-center gap-2.5 border border-white/25 rounded-full px-5 py-2.5 text-sm font-medium text-white/85 hover:bg-white hover:text-navydeep transition-colors duration-300">
+              className="inline-flex items-center gap-2.5 text-sm font-medium text-white/75 hover:text-cyan transition-colors duration-300">
               <Icon size={16} />
               {label}
             </a>

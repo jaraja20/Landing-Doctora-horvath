@@ -68,6 +68,8 @@ La versión anterior (oscura navy/cyan) fue REEMPLAZADA por la propuesta de refe
 
 - Botón "volver arriba" flotante (aparece al scrollear, círculo blanco con borde azul) + logo oficial de WhatsApp en todos los puntos de contacto (botón Contactar, pill del footer, ítem del menú desplegable) + sección "Conversemos sobre ciencia, salud e innovación" centrada (25 ago 2026).
 
+- Footer refinado (25 ago 2026): sello circular recomponiendo la imagen para que llene todo el círculo blanco (era solo el anillo azul sobre transparencia); redes como links limpios ícono+texto sin píldoras (WhatsApp, Instagram, Correo).
+
 ## Backlog priorizado
 - P0: Definir precios/modalidad de los 3 servicios con Gabriela.
 - P0: Revisión de copy línea por línea con Gabriela.
