@@ -112,6 +112,7 @@ export const copy = {
     footer: {
       location: "Asunción · Paraguay",
       rights: "© 2026 Dra. Gabriela Horvath · Todos los derechos reservados",
+      credit: "Hecho por Tekoha Systems",
     },
     traj: {
       overline: "Trayectoria",
@@ -366,6 +367,7 @@ export const copy = {
     footer: {
       location: "Asunción · Paraguay",
       rights: "© 2026 Dr. Gabriela Horvath · All rights reserved",
+      credit: "Built by Tekoha Systems",
     },
     traj: {
       overline: "Journey",

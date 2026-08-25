@@ -2,7 +2,6 @@ import { useState } from "react";
 import { Link, useNavigate, useLocation } from "react-router-dom";
 import { motion, AnimatePresence } from "framer-motion";
 import { ChevronDown, Menu, X, ArrowUpRight, Network, MessageCircle, ClipboardCheck } from "lucide-react";
-import { GhLogo } from "./GhLogo";
 import { useLang, scrollToId } from "../App";
 import { WHATSAPP_URL, wa } from "../i18n";
 
@@ -58,7 +57,7 @@ export const Navbar = () => {
     <header className="fixed top-0 inset-x-0 z-50 bg-white/90 backdrop-blur-lg border-b border-black/[0.06]" data-testid="main-nav">
       <nav className="max-w-7xl mx-auto px-6 lg:px-10 h-20 flex items-center justify-between gap-6">
         <Link to="/" className="flex items-center gap-3 shrink-0" data-testid="nav-logo" onClick={() => setMobileOpen(false)}>
-          <GhLogo size={42} />
+          <img src="/assets/logo-gh.png" alt="GH" className="w-10 h-10" data-testid="nav-logo-icon" />
           <span className="hidden sm:block leading-tight">
             <span className="block text-sm font-bold text-black">{t.brand.name}</span>
             <span className="block text-[11px] text-black/50">{t.brand.role}</span>

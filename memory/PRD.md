@@ -62,6 +62,8 @@ La versión anterior (oscura navy/cyan) fue REEMPLAZADA por la propuesta de refe
 - Sin LinkedIn por ahora (la clienta no tiene URL confirmada).
 - EN: toggle ES/EN completo en las 3 páginas.
 
+- Logos oficiales integrados (25 ago 2026): isotipo GH real (logo-gh.png) en navbar + favicon; sello circular "Dra. Gabriela Horvath" (logo-stamp.png) en footer. Crédito "Hecho por Tekoha Systems" con link a https://www.tekohasystems.com en el footer.
+
 ## Backlog priorizado
 - P0: Definir precios/modalidad de los 3 servicios con Gabriela.
 - P0: Revisión de copy línea por línea con Gabriela.
