@@ -4,7 +4,7 @@ import { useLang } from "../../App";
 export const PurposeBand = () => {
   const { t } = useLang();
   return (
-    <section className="bg-corp text-white py-24 lg:py-32" data-testid="purpose-section">
+    <section className="bg-navydeep text-white py-24 lg:py-32" data-testid="purpose-section">
       <div className="max-w-7xl mx-auto px-6 lg:px-10 grid grid-cols-1 lg:grid-cols-2 gap-14 items-center">
         <Reveal>
           <h2 className="text-4xl sm:text-5xl font-bold tracking-tight" data-testid="purpose-title">{t.purpose.title}</h2>

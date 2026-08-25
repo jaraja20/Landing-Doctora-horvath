@@ -14,7 +14,7 @@ module.exports = {
       },
       colors: {
         navy: '#001871',
-        navydeep: '#000c3d',
+        navydeep: '#000e46',
         cyan: '#3CCBDA',
         cyanlight: '#A8ECF2',
         indigobrand: '#303AB2',

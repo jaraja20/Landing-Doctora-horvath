@@ -64,6 +64,8 @@ La versión anterior (oscura navy/cyan) fue REEMPLAZADA por la propuesta de refe
 
 - Logos oficiales integrados (25 ago 2026): isotipo GH real (logo-gh.png) en navbar + favicon; sello circular "Dra. Gabriela Horvath" (logo-stamp.png) en footer. Crédito "Hecho por Tekoha Systems" con link a https://www.tekohasystems.com en el footer.
 
+- Ajustes footer/CTA (25 ago 2026): footer y banda "Liderar también es cuidar" ahora en azul navy #000e46 (mismo azul del footer de horvathcare.com). Íconos sociales del footer como botones pill etiquetados (WhatsApp / Instagram / Correo) en blanco. Sello circular agrandado sobre círculo blanco. CTA final "Conversemos..." quedó SOLO con el botón Contactar (íconos sociales removidos de ahí).
+
 ## Backlog priorizado
 - P0: Definir precios/modalidad de los 3 servicios con Gabriela.
 - P0: Revisión de copy línea por línea con Gabriela.
