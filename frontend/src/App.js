@@ -5,6 +5,7 @@ import "@/App.css";
 import { copy } from "@/i18n";
 import { Navbar } from "@/components/Navbar";
 import { Footer } from "@/components/Footer";
+import { BackToTop } from "@/components/BackToTop";
 import Home from "@/pages/Home";
 import Trayectoria from "@/pages/Trayectoria";
 import Precedent from "@/pages/Precedent";
@@ -64,6 +65,7 @@ function App() {
             <Route path="/precedent" element={<Precedent />} />
           </Routes>
           <Footer />
+          <BackToTop />
         </div>
       </BrowserRouter>
     </LangContext.Provider>

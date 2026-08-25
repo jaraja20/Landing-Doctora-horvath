@@ -1,11 +1,12 @@
 import { useState } from "react";
 import { Link, useNavigate, useLocation } from "react-router-dom";
 import { motion, AnimatePresence } from "framer-motion";
-import { ChevronDown, Menu, X, ArrowUpRight, Network, MessageCircle, ClipboardCheck } from "lucide-react";
+import { ChevronDown, Menu, X, ArrowUpRight, Network, ClipboardCheck } from "lucide-react";
+import { WhatsAppIcon } from "./WhatsAppIcon";
 import { useLang, scrollToId } from "../App";
 import { WHATSAPP_URL, wa } from "../i18n";
 
-const icons = { network: Network, chat: MessageCircle, check: ClipboardCheck };
+const icons = { network: Network, chat: WhatsAppIcon, check: ClipboardCheck };
 
 const DropdownCard = ({ items, onClose, mobile = false }) => (
   <div className={mobile ? "flex flex-col gap-2 pl-3 border-l-2 border-corp/20" : "flex flex-col p-3"}>

@@ -1,9 +1,10 @@
-import { Instagram, Mail, MessageCircle } from "lucide-react";
+import { Instagram, Mail } from "lucide-react";
+import { WhatsAppIcon } from "./WhatsAppIcon";
 import { useLang } from "../App";
 import { WHATSAPP_URL, INSTAGRAM_URL, EMAIL } from "../i18n";
 
 const socials = [
-  { href: WHATSAPP_URL, label: "WhatsApp", Icon: MessageCircle, id: "whatsapp" },
+  { href: WHATSAPP_URL, label: "WhatsApp", Icon: WhatsAppIcon, id: "whatsapp" },
   { href: INSTAGRAM_URL, label: "Instagram", Icon: Instagram, id: "instagram" },
   { href: `mailto:${EMAIL}`, label: "Correo", Icon: Mail, id: "email" },
 ];
@@ -27,7 +28,7 @@ export const Footer = () => {
             <a key={id} href={href} target={id === "email" ? undefined : "_blank"} rel="noopener noreferrer" aria-label={label}
               data-testid={`footer-${id}-link`}
               className="inline-flex items-center gap-2.5 border border-white/25 rounded-full px-5 py-2.5 text-sm font-medium text-white/85 hover:bg-white hover:text-navydeep transition-colors duration-300">
-              <Icon size={16} strokeWidth={1.75} />
+              <Icon size={16} />
               {label}
             </a>
           ))}

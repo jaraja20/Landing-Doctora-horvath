@@ -66,6 +66,8 @@ La versión anterior (oscura navy/cyan) fue REEMPLAZADA por la propuesta de refe
 
 - Ajustes footer/CTA (25 ago 2026): footer y banda "Liderar también es cuidar" ahora en azul navy #000e46 (mismo azul del footer de horvathcare.com). Íconos sociales del footer como botones pill etiquetados (WhatsApp / Instagram / Correo) en blanco. Sello circular agrandado sobre círculo blanco. CTA final "Conversemos..." quedó SOLO con el botón Contactar (íconos sociales removidos de ahí).
 
+- Botón "volver arriba" flotante (aparece al scrollear, círculo blanco con borde azul) + logo oficial de WhatsApp en todos los puntos de contacto (botón Contactar, pill del footer, ítem del menú desplegable) + sección "Conversemos sobre ciencia, salud e innovación" centrada (25 ago 2026).
+
 ## Backlog priorizado
 - P0: Definir precios/modalidad de los 3 servicios con Gabriela.
 - P0: Revisión de copy línea por línea con Gabriela.
