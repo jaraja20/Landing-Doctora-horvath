@@ -37,8 +37,7 @@ export const copy = {
     ],
     beyond: {
       title: "Más allá del diagnóstico.",
-      col1: "Integro ciencia, interpretación clínica, liderazgo y estrategia de sistemas de salud para mejorar decisiones, fortalecer instituciones y generar impacto sostenible en las personas.",
-      col2: "Como bioquímica, investigadora y líder, trabajo en la intersección entre diagnóstico, investigación y gestión. Mi enfoque combina rigurosidad científica con una visión sistémica y humana de la salud.",
+      p: "Crecí entre laboratorios. Hoy dirijo Laboratorio Horvath, institución con más de 40 años de trayectoria, y lidero Horvath Advanced Science Hub. Trabajo donde la ciencia se vuelve decisión: diagnóstico, investigación y proyectos de salud que otros dan por imposibles. Porque detrás de cada resultado hay una persona esperando una respuesta.",
       highlight: "La ciencia importa. La persona detrás de cada resultado, también.",
     },
     areas: {
@@ -292,8 +291,7 @@ export const copy = {
     ],
     beyond: {
       title: "Beyond diagnosis.",
-      col1: "I integrate science, clinical interpretation, leadership and health systems strategy to improve decisions, strengthen institutions and generate sustainable impact on people's lives.",
-      col2: "As a biochemist, researcher and leader, I work at the intersection of diagnostics, research and management. My approach combines scientific rigor with a systemic and human vision of health.",
+      p: "I grew up among laboratories. Today I lead Laboratorio Horvath, an institution with more than 40 years of track record, and I head Horvath Advanced Science Hub. I work where science becomes decision: diagnostics, research and health projects that others deem impossible. Because behind every result there is a person waiting for an answer.",
       highlight: "Science matters. The person behind every result matters too.",
     },
     areas: {
