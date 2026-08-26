@@ -31,7 +31,7 @@ export const copy = {
     },
     authority: [
       { v: "20+", l: "Años de experiencia" },
-      { v: "Dr. + 2", l: "Doctorado y dos maestrías internacionales" },
+      { v: "2", l: "Maestrías internacionales" },
       { v: "Harvard", l: "Formación en Investigación Clínica — Harvard Medical School" },
       { v: "40+", l: "Años de legado institucional Horvath" },
     ],
@@ -286,7 +286,7 @@ export const copy = {
     },
     authority: [
       { v: "20+", l: "Years of experience" },
-      { v: "PhD + 2", l: "Doctorate and two international master's degrees" },
+      { v: "2", l: "International master's degrees" },
       { v: "Harvard", l: "Clinical Research training — Harvard Medical School" },
       { v: "40+", l: "Years of Horvath institutional legacy" },
     ],
