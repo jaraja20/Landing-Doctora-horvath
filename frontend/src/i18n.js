@@ -2,6 +2,8 @@ export const WHATSAPP_URL = "https://wa.me/595971175353";
 export const INSTAGRAM_URL = "https://www.instagram.com/dra_gabrielahorvath/";
 export const EMAIL = "dra.gabrielahorvath@gmail.com";
 export const HORVATH_CARE = "https://www.horvathcare.com";
+export const LINKEDIN_URL = "https://www.linkedin.com/in/dra-gabriela-horvath-96530a40/";
+export const FACEBOOK_URL = "https://www.facebook.com/gabriela.horvath.545";
 
 export const wa = (msg) => `${WHATSAPP_URL}?text=${encodeURIComponent(msg)}`;
 
@@ -105,14 +107,31 @@ export const copy = {
       ],
     },
     finalCta: {
-      title: "Conversemos sobre ciencia, salud e innovación.",
-      sub: "Consultoría estratégica, proyectos de salud y colaboración institucional.",
-      button: "Contactar",
+      title: "¿Tenés un proyecto de salud en marcha?",
+      sub: "Conocé las modalidades de consultoría y agendá tu sesión.",
+      button: "Ver servicios",
     },
     footer: {
       location: "Asunción · Paraguay",
       rights: "© 2026 Dra. Gabriela Horvath · Todos los derechos reservados",
       credit: "Hecho por Tekoha Systems",
+      servicesTitle: "Servicios",
+      services: {
+        precedent: "Consultoría estratégica PRECEDENT™",
+        laboral: "Salud laboral",
+        diagnostico: "Diagnóstico clínico",
+        hub: "Horvath Advanced Science Hub",
+      },
+      infoTitle: "Información",
+      info: {
+        trayectoria: "Trayectoria",
+        prensa: "Prensa y divulgación",
+      },
+      closing: {
+        title: "Consultoría estratégica en salud",
+        text: "Conocé las modalidades de trabajo y agendá tu sesión.",
+        button: "Ver servicios",
+      },
     },
     traj: {
       overline: "Trayectoria",
@@ -360,14 +379,31 @@ export const copy = {
       ],
     },
     finalCta: {
-      title: "Let's talk about science, health and innovation.",
-      sub: "Strategic advisory, health projects and institutional collaboration.",
-      button: "Contact",
+      title: "Do you have a health project underway?",
+      sub: "Explore the advisory options and book your session.",
+      button: "See services",
     },
     footer: {
       location: "Asunción · Paraguay",
       rights: "© 2026 Dr. Gabriela Horvath · All rights reserved",
       credit: "Built by Tekoha Systems",
+      servicesTitle: "Services",
+      services: {
+        precedent: "PRECEDENT™ Strategic Advisory",
+        laboral: "Occupational Health",
+        diagnostico: "Clinical Diagnostics",
+        hub: "Horvath Advanced Science Hub",
+      },
+      infoTitle: "Information",
+      info: {
+        trayectoria: "Journey",
+        prensa: "Press & outreach",
+      },
+      closing: {
+        title: "Strategic health advisory",
+        text: "Explore the work modalities and book your session.",
+        button: "See services",
+      },
     },
     traj: {
       overline: "Journey",
