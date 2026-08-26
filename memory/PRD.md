@@ -72,6 +72,8 @@ La versión anterior (oscura navy/cyan) fue REEMPLAZADA por la propuesta de refe
 
 - Correcciones de Gabriela (25 ago 2026): bio de Trayectoria reescrita en primera persona con lead "Ciencia, liderazgo y ejecución para transformar la salud."; membresías solo Harvard Alumni (AACC y ABA removidas — no activas); hito CAF: «Emprendiendo la tradición» seleccionado como mejor proyecto de Paraguay (Diplomado Gobernabilidad e Innovación Pública 2023) en Producción científica + certificado en galería (caf-cert.jpg); blur de mvc-recruit.jpg solo sobre las hojas con bordes suaves; footer vuelve a Asunción · Paraguay.
 
+- Fix mobile (26 ago 2026): franja de autoridad tenía textos colisionando en 2 columnas (faltaba gap entre celdas en mobile) — agregado gap-x/gap-y. Revisión completa mobile de las 3 páginas: timeline, credenciales, acróstico, tickets — todo con separación correcta.
+
 ## Backlog priorizado
 - P0: Definir precios/modalidad de los 3 servicios con Gabriela.
 - P0: Revisión de copy línea por línea con Gabriela.

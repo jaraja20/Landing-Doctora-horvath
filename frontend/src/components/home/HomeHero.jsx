@@ -66,9 +66,9 @@ export const HomeHero = () => {
       </section>
 
       <section className="border-y border-black/[0.06] bg-white" data-testid="authority-strip">
-        <div className="max-w-7xl mx-auto px-6 lg:px-10 grid grid-cols-2 lg:grid-cols-4 lg:divide-x divide-black/[0.06]">
+        <div className="max-w-7xl mx-auto px-6 lg:px-10 grid grid-cols-2 lg:grid-cols-4 gap-x-6 gap-y-2 lg:gap-0 lg:divide-x divide-black/[0.06]">
           {t.authority.map((s, i) => (
-            <Reveal key={s.l} delay={i * 0.08} className="py-10 lg:py-14 lg:px-8 first:pl-0">
+            <Reveal key={s.l} delay={i * 0.08} className="py-10 lg:py-14 lg:px-8 lg:first:pl-0">
               <div data-testid={`authority-${i + 1}`}>
                 <p className="text-3xl sm:text-4xl lg:text-5xl font-bold tracking-tight text-corp">{s.v}</p>
                 <p className="mt-3 text-xs uppercase tracking-[0.15em] leading-relaxed text-black/50">{s.l}</p>
