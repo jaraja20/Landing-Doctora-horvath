@@ -27,15 +27,15 @@ export const HomeHero = () => {
             <div className="relative w-full aspect-[4/5] rounded-md overflow-hidden">
               <img src="/assets/gabriela-frente.jpg" alt="Dra. Gabriela Horvath"
                 className="w-full h-full object-cover object-center" data-testid="hero-image" />
-              <div className="absolute inset-x-0 bottom-0 pt-16 pb-6 px-5 sm:px-7 bg-gradient-to-t from-navydeep/95 via-navydeep/55 to-transparent">
-                <p className="text-[10px] sm:text-[11px] font-semibold uppercase tracking-[0.2em] text-cyanlight" data-testid="hero-role-badge">
-                  {t.hero.badge}
-                </p>
-                <p className="mt-2 text-2xl sm:text-3xl font-bold uppercase tracking-tight leading-[1.05] text-white" data-testid="hero-name">
+              <div className="absolute inset-x-0 bottom-0 pt-24 sm:pt-28 pb-6 px-5 sm:px-7 bg-gradient-to-t from-navydeep/95 via-navydeep/60 to-transparent">
+                <p className="text-4xl sm:text-5xl font-bold uppercase tracking-tight leading-[0.95] text-white" data-testid="hero-name">
                   {t.brand.name}
                 </p>
                 <p className="mt-3 text-[10px] sm:text-[11px] font-medium uppercase tracking-[0.1em] leading-relaxed text-white/70" data-testid="hero-descriptors">
                   {t.hero.descriptors}
+                </p>
+                <p className="mt-2 text-[10px] sm:text-[11px] font-semibold uppercase tracking-[0.2em] text-cyanlight" data-testid="hero-role-badge">
+                  {t.hero.badge}
                 </p>
               </div>
             </div>
