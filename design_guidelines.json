@@ -1,0 +1,117 @@
+{
+  "theme": "Dark Theme Dominant (Navy Deep #000c3d) with strategic light sections (#F2F2F2) for contrast.",
+  "typography": {
+    "main_font": "Onest",
+    "editorial_font": "Source Serif 4",
+    "font_setup_instructions": "Import Onest (weights 300, 400, 700, 900) and Source Serif 4 from Google Fonts. Configure Tailwind to use Onest as sans and Source Serif 4 as serif.",
+    "hierarchy": {
+      "H1": "text-5xl sm:text-6xl lg:text-7xl font-sans font-black tracking-tighter leading-none",
+      "H2": "text-4xl sm:text-5xl lg:text-6xl font-sans font-bold tracking-tight",
+      "H3": "text-2xl sm:text-3xl font-sans font-medium tracking-tight",
+      "Editorial_Numbers": "text-6xl sm:text-8xl font-serif text-[#3CCBDA] opacity-80",
+      "Body": "text-base sm:text-lg font-sans font-light leading-relaxed text-gray-300",
+      "Overline": "text-xs sm:text-sm font-sans uppercase tracking-[0.2em] text-[#A8ECF2]"
+    }
+  },
+  "colors": {
+    "primary": "#001871",
+    "background_dark": "#000c3d",
+    "accent_main": "#3CCBDA",
+    "accent_soft": "#A8ECF2",
+    "secondary": "#303AB2",
+    "complementary_pink": "#FF94CA",
+    "light_gray": "#F2F2F2",
+    "text_gray": "#555555",
+    "white": "#FFFFFF"
+  },
+  "visual_enhancers": {
+    "glassmorphism": "backdrop-blur-xl bg-[#000c3d]/70 border-b border-white/10",
+    "borders": "1px solid rgba(60, 203, 218, 0.2) for subtle division. Use sharp edges or max rounded-md for premium feel.",
+    "textures": "Subtle noise overlay (opacity 2-3%) on dark backgrounds to add tactile feel and prevent flat digital look.",
+    "buttons": "Pill-shaped (rounded-full) or crisp rectangles. Primary CTA: bg-[#3CCBDA] text-[#000c3d] hover:bg-[#A8ECF2] transition-colors. Secondary CTA: border border-[#3CCBDA] text-[#3CCBDA] hover:bg-[#3CCBDA]/10."
+  },
+  "layouts": {
+    "hero": "min-h-screen relative flex items-center pt-24 pb-12. Content layered over full-bleed absolute image with heavy dark overlay (bg-[#000c3d]/60 to bg-[#001871]/40 mix-blend-multiply).",
+    "method_grid": "grid grid-cols-1 md:grid-cols-2 gap-12 lg:gap-24 items-start py-24",
+    "services_grid": "grid grid-cols-1 md:grid-cols-3 gap-6 py-20",
+    "stats_band": "grid grid-cols-2 md:grid-cols-4 gap-8 py-16 border-y border-white/10",
+    "spacing": "Generous spacing. Use py-24 or py-32 for main sections. gap-8 to gap-16 between structural blocks."
+  },
+  "components": {
+    "Navbar": "Sticky top-0 z-50. Glassmorphism background. Includes Logo (text based or placeholder), Center Links, and Right section with ES/EN toggle + WhatsApp CTA.",
+    "Hero": "Kinetic text reveal (line by line) using framer-motion. H1 must be bold, establishing health systems authority.",
+    "MarqueeRibbon": "react-fast-marquee. Thin band (py-4), bg-[#303AB2] or dark navy, text-[#A8ECF2]. Items: ESTRUCTURAR • ALINEAR • EJECUTAR • CONSOLIDAR. Slow continuous scroll.",
+    "MethodCard": "Number in Source Serif 4 (e.g., '01'). Title in Onest. Description in Onest light. Minimalist, high negative space.",
+    "ServiceCard": "Flat solid or subtle glass. Title, short description, 'Descubrir ->' link to WhatsApp.",
+    "AudiencePills": "Flex wrap container. Pills with border border-white/20 rounded-full px-6 py-3 text-sm hover:border-[#3CCBDA] transition-colors.",
+    "Timeline": "Vertical line on left side. Nodes for 2021, 2022-23, Hoy. Content on right of the line.",
+    "FinalCTA": "Massive typography '¿Listos para estructurar el futuro?'. Centralized layout. Prominent WhatsApp button (+595 971 175353).",
+    "LanguageToggle": "Simple 'ES / EN' button in navbar switching state (visual only if logic isn't wired)."
+  },
+  "motion": {
+    "scrolling": "Use lenis for smooth momentum scrolling. This is MANDATORY for the premium feel.",
+    "reveals": "Framer-motion for scroll-triggered entrance (y: 30, opacity: 0 -> y: 0, opacity: 1, duration: 0.8, ease: 'easeOut'). Stagger children in grids.",
+    "hero_kinetic": "Framer-motion stagger text reveal. Split text into lines, overflow hidden on wrapper, animate y from 100% to 0%.",
+    "hover_states": "Subtle transform translate-y-[-2px] on cards. Arrow icon sliding right (translate-x-1) on 'Descubrir' links."
+  },
+  "accessibility": {
+    "contrast": "Ensure white text on #000c3d meets APCA. Use #A8ECF2 for small accents to maintain readability.",
+    "testing": "All interactive elements (buttons, toggles, links) MUST have data-testid attributes (e.g., data-testid='whatsapp-cta-hero').",
+    "aria": "Add aria-label to WhatsApp buttons and Language toggle."
+  },
+  "media": {
+    "icons": "Use lucide-react. Keep stroke width thin (1.5 or 1.25) for elegant editorial look.",
+    "images": "Use full width, object-cover. Ensure max-h-[80vh] for mobile where applicable, except full-screen hero."
+  },
+  "3d_libraries_and_steps": {
+    "recommendation": "Use framer-motion for parallax and elegant reveals. Avoid heavy 3D unless strictly necessary to maintain the 'sober' tone. A subtle mouse-follow parallax on the hero background image is recommended using framer-motion useScroll/useTransform."
+  },
+  "image_urls": {
+    "hero_background": {
+      "url": "https://images.unsplash.com/photo-1776875479148-e51ea920282c?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA2MjJ8MHwxfHNlYXJjaHwyfHxlbGVnYW50JTIwYWJzdHJhY3QlMjBhcmNoaXRlY3R1cmFsJTIwbGluZXMlMjBuYXZ5fGVufDB8fHx8MTc4NzI3MTg1Mnww&ixlib=rb-4.1.0&q=85",
+      "description": "Deep blue background with subtle curved lines. Perfect for an elegant, abstract hero section.",
+      "category": "Hero Section Background"
+    },
+    "doctor_lab": {
+      "url": "https://images.pexels.com/photos/8442037/pexels-photo-8442037.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+      "description": "Modern laboratory microscope. Represents the scientific/clinical background of the CEO.",
+      "category": "About/Trajectory Section"
+    },
+    "doctor_portrait": {
+      "url": "https://images.unsplash.com/photo-1777927519804-8a8aa4c78e39?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjAzMzV8MHwxfHNlYXJjaHwxfHxtZWRpY2FsJTIwcHJvZmVzc2lvbmFsJTIwcG9ydHJhaXQlMjBkYXJrJTIwYmx1ZSUyMGJhY2tncm91bmR8ZW58MHx8fHwxNzg3MjcxODUyfDA&ixlib=rb-4.1.0&q=85",
+      "description": "Professional standing in blue light. Stand-in for Dra. Horvath's dark-blue portrait.",
+      "category": "About Section Portrait"
+    }
+  },
+  "instructions_to_main_agent": [
+    "Install dependencies: framer-motion, @studio-freight/lenis (or lenis), react-fast-marquee, lucide-react.",
+    "Setup Tailwind config with the brand colors (#001871, #000c3d, #3CCBDA, #A8ECF2, #303AB2, #FF94CA).",
+    "Configure Google Fonts: Onest and Source Serif 4 in the main HTML.",
+    "Build the bilingual toggle state (can be a simple React state 'es'/'en' that changes text in a dictionary object).",
+    "Implement the sticky Navbar with glassmorphism.",
+    "Implement the Hero section with Framer Motion kinetic text reveal.",
+    "Implement the react-fast-marquee component directly below the hero.",
+    "Build the PRECEDENT™ method section with large Source Serif 4 numbers.",
+    "Ensure all WhatsApp buttons link to 'https://wa.me/595971175353'.",
+    "Apply 'dark' theme stylings (text-white against #000c3d background) globally."
+  ],
+  "UNIVERSAL GUIDELINES FOR MAIN AGENT": [
+    "Do not converge toward generic outputs. Use the specified colors and typography strictly.",
+    "Do not use dark colors as gradients (keep them solid or with a noise overlay).",
+    "Create depth through layered design elements and subtle borders (1px solid #3CCBDA/20).",
+    "Use glass-morphism effects with backdrop filters (12-24px blur).",
+    "DO NOT apply universal transitions (transition: all). Animate specific properties.",
+    "DO NOT center align the app container. Respect left-alignment for dense text.",
+    "Use pill-shaped buttons for primary CTAs.",
+    "DO NOT use emojis for icons. Use lucide-react.",
+    "Implement micro-animations on hover states and entrance scroll reveals.",
+    "Use generous spacing (p-8 to p-24) to avoid cramped, cheap looks."
+  ],
+  "GENERAL UI UX DESIGN GUIDELINES": [
+    "All interactive elements MUST include a data-testid attribute.",
+    "Maintain high contrast ratios for text on dark backgrounds.",
+    "Ensure the language toggle is clearly visible and accessible.",
+    "Do NOT use completely transparent backgrounds for the navbar or overlays where content scrolls underneath.",
+    "Keep typography scale fluid and responsive (clamp or tailwind sm/md/lg classes)."
+  ]
+}
