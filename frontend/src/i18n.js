@@ -177,7 +177,6 @@ export const copy = {
       galleryTitle: "Proyectos ejecutados",
       gallery: [
         { img: "/assets/gallery/mvc-kickoff.jpg", cap: "2021 — Inicio del ensayo clínico Fase III de la vacuna MVC COVID-19 · FCM-UNA × Medigen (Taiwán)" },
-        { img: "/assets/gallery/mvc-recruit.jpg", cap: "Reclutamiento de 1.000 participantes en tiempo récord" },
         { img: "/assets/gallery/tesai-press.jpg", cap: "Vocería y presentación del plan de vacunación · Fundación Tesãi — Itaipú Binacional" },
         { img: "/assets/gallery/korea-visit.jpg", cap: "Transferencia técnica con delegación de Corea del Sur" },
         { img: "/assets/gallery/reactivos.jpg", cap: "Desarrollo de test de diagnóstico in vitro · colaboración internacional" },
@@ -433,7 +432,6 @@ export const copy = {
       galleryTitle: "Executed projects",
       gallery: [
         { img: "/assets/gallery/mvc-kickoff.jpg", cap: "2021 — Kickoff of the Phase III clinical trial of the MVC COVID-19 vaccine · FCM-UNA × Medigen (Taiwan)" },
-        { img: "/assets/gallery/mvc-recruit.jpg", cap: "1,000 participants recruited in record time" },
         { img: "/assets/gallery/tesai-press.jpg", cap: "Spokesperson and presentation of the vaccination plan · Fundación Tesãi — Itaipú Binacional" },
         { img: "/assets/gallery/korea-visit.jpg", cap: "Technical transfer with the South Korean delegation" },
         { img: "/assets/gallery/reactivos.jpg", cap: "In-vitro diagnostic test development · international collaboration" },
