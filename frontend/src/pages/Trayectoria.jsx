@@ -14,8 +14,14 @@ export default function Trayectoria() {
           <span className="mt-6 block w-12 h-1 bg-corp" aria-hidden="true" />
         </Reveal>
         <Reveal delay={0.16}>
-          <p className="mt-10 max-w-3xl text-lg sm:text-xl font-light leading-relaxed text-black/65" data-testid="trayectoria-bio">
-            {t.traj.bio}
+          <p className="mt-10 max-w-3xl text-xl sm:text-2xl font-semibold uppercase tracking-wide leading-snug text-black" data-testid="trayectoria-bio-lead">
+            {t.traj.bioLead}
+          </p>
+          <p className="mt-6 max-w-3xl text-lg sm:text-xl font-light leading-relaxed text-black/65" data-testid="trayectoria-bio">
+            {t.traj.bio1}
+          </p>
+          <p className="mt-4 max-w-3xl text-lg sm:text-xl font-light leading-relaxed text-black/65">
+            {t.traj.bio2}
           </p>
         </Reveal>
       </section>

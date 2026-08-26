@@ -70,6 +70,8 @@ La versión anterior (oscura navy/cyan) fue REEMPLAZADA por la propuesta de refe
 
 - Footer refinado (25 ago 2026): sello circular recomponiendo la imagen para que llene todo el círculo blanco (era solo el anillo azul sobre transparencia); redes como links limpios ícono+texto sin píldoras (WhatsApp, Instagram, Correo).
 
+- Correcciones de Gabriela (25 ago 2026): bio de Trayectoria reescrita en primera persona con lead "Ciencia, liderazgo y ejecución para transformar la salud."; membresías solo Harvard Alumni (AACC y ABA removidas — no activas); hito CAF: «Emprendiendo la tradición» seleccionado como mejor proyecto de Paraguay (Diplomado Gobernabilidad e Innovación Pública 2023) en Producción científica + certificado en galería (caf-cert.jpg); blur de mvc-recruit.jpg solo sobre las hojas con bordes suaves; footer vuelve a Asunción · Paraguay.
+
 ## Backlog priorizado
 - P0: Definir precios/modalidad de los 3 servicios con Gabriela.
 - P0: Revisión de copy línea por línea con Gabriela.

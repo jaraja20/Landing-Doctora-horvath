@@ -110,14 +110,16 @@ export const copy = {
       button: "Contactar",
     },
     footer: {
-      location: "Ciudad del Este · Paraguay",
+      location: "Asunción · Paraguay",
       rights: "© 2026 Dra. Gabriela Horvath · Todos los derechos reservados",
       credit: "Hecho por Tekoha Systems",
     },
     traj: {
       overline: "Trayectoria",
       title: "Una trayectoria construida entre ciencia y liderazgo",
-      bio: "Doctora en Bioquímica por la Universidad del Norte, con dos maestrías internacionales y formación en investigación clínica en Harvard Medical School. Dirige Laboratorio Horvath — institución con más de 40 años de trayectoria — y fue Project Manager y representante local de Medigen (Taiwán) en el primer ensayo clínico Fase III realizado en Paraguay. Es Perito Profesional de la Corte Suprema de Justicia y Profesora Adjunta de Toxicología en la Universidad Nacional de Asunción.",
+      bioLead: "Ciencia, liderazgo y ejecución para transformar la salud.",
+      bio1: "Soy doctora en Bioquímica, con maestrías internacionales en Toxicología y Dirección Ejecutiva de Proyectos, y formación en investigación clínica en Harvard Medical School.",
+      bio2: "Dirijo Laboratorios Horvath, institución con más de 40 años de trayectoria, y lidero Horvath Advanced Science Hub. Mi trabajo integra dirección de laboratorios, innovación diagnóstica, investigación clínica internacional y gestión de proyectos complejos en entornos regulatorios exigentes.",
       categories: [
         {
           t: "Formación académica",
@@ -149,7 +151,7 @@ export const copy = {
             { r: "Fibrosis miocárdica inducida por sal", o: "XXXI Congreso Mundial de Medicina Interna, Santiago de Chile" },
             { r: "Colinesterasa sérica en fumigadores agropecuarios", o: "Biomarcador de exposición a plaguicidas · Centro Nacional de Toxicología, Ministerio de Salud" },
             { r: "Suplementación de L-glutamina y L-alanina", o: "Estudio experimental en ciclistas de alta competición" },
-            { r: "Indigenismo: Diversidad e Inclusión en Paraguay", o: "Proyecto con el pueblo Mbya Guaraní · competencia internacional CAF" },
+            { r: "«Emprendiendo la tradición» — Indigenismo, diversidad e inclusión", o: "Proyecto con el pueblo Mbya Guaraní · Seleccionado por CAF como el mejor proyecto de Paraguay — Diplomado en Gobernabilidad e Innovación Pública, 2023" },
           ],
         },
         {
@@ -167,8 +169,6 @@ export const copy = {
         {
           t: "Membresías profesionales",
           items: [
-            { r: "AACC", o: "Asociación Americana de Química Clínica, Estados Unidos" },
-            { r: "ABA", o: "Asociación Bioquímica Argentina" },
             { r: "Harvard Alumni", o: "Estados Unidos" },
           ],
         },
@@ -185,6 +185,7 @@ export const copy = {
         { img: "/assets/gallery/aeropuerto.jpg", cap: "Puesto de biología molecular · Aeropuerto Internacional Silvio Pettirossi" },
         { img: "/assets/gallery/team-lab.jpg", cap: "El equipo del laboratorio — 80% mujeres" },
         { img: "/assets/gallery/biosafety.jpg", cap: "Laboratorio de alta complejidad desarrollado para Fundación Tesãi" },
+        { img: "/assets/gallery/caf-cert.jpg", cap: "2023 — CAF seleccionó «Emprendiendo la tradición» como el mejor proyecto de Paraguay" },
       ],
     },
     method: {
@@ -365,14 +366,16 @@ export const copy = {
       button: "Contact",
     },
     footer: {
-      location: "Ciudad del Este · Paraguay",
+      location: "Asunción · Paraguay",
       rights: "© 2026 Dr. Gabriela Horvath · All rights reserved",
       credit: "Built by Tekoha Systems",
     },
     traj: {
       overline: "Journey",
       title: "A career built between science and leadership",
-      bio: "Doctorate in Biochemistry from Universidad del Norte, with two international master's degrees and clinical research training at Harvard Medical School. She leads Laboratorio Horvath — an institution with over 40 years of track record — and was Project Manager and local representative of Medigen (Taiwan) in the first Phase III clinical trial conducted in Paraguay. She is a Professional Expert Witness of the Supreme Court of Justice and Adjunct Professor of Toxicology at the Universidad Nacional de Asunción.",
+      bioLead: "Science, leadership and execution to transform health.",
+      bio1: "I am a Doctor of Biochemistry, with international master's degrees in Toxicology and Executive Project Management, and clinical research training at Harvard Medical School.",
+      bio2: "I lead Laboratorios Horvath, an institution with more than 40 years of track record, and I head Horvath Advanced Science Hub. My work integrates laboratory direction, diagnostic innovation, international clinical research and management of complex projects in demanding regulatory environments.",
       categories: [
         {
           t: "Academic background",
@@ -404,7 +407,7 @@ export const copy = {
             { r: "Salt-induced myocardial fibrosis", o: "XXXI World Congress of Internal Medicine, Santiago de Chile" },
             { r: "Serum cholinesterase in agricultural sprayers", o: "Pesticide exposure biomarker · National Toxicology Center, Ministry of Health" },
             { r: "L-glutamine and L-alanine supplementation", o: "Experimental study in high-performance cyclists" },
-            { r: "Indigenism: Diversity & Inclusion in Paraguay", o: "Project with the Mbya Guaraní people · CAF international competition" },
+            { r: "«Emprendiendo la tradición» — Indigenism, diversity & inclusion", o: "Project with the Mbya Guaraní people · Selected by CAF as the best project in Paraguay — Diploma in Governance & Public Innovation, 2023" },
           ],
         },
         {
@@ -422,8 +425,6 @@ export const copy = {
         {
           t: "Professional memberships",
           items: [
-            { r: "AACC", o: "American Association for Clinical Chemistry, United States" },
-            { r: "ABA", o: "Argentine Biochemistry Association" },
             { r: "Harvard Alumni", o: "United States" },
           ],
         },
@@ -440,6 +441,7 @@ export const copy = {
         { img: "/assets/gallery/aeropuerto.jpg", cap: "Molecular biology point · Silvio Pettirossi International Airport" },
         { img: "/assets/gallery/team-lab.jpg", cap: "The laboratory team — 80% women" },
         { img: "/assets/gallery/biosafety.jpg", cap: "High-complexity laboratory developed for Fundación Tesãi" },
+        { img: "/assets/gallery/caf-cert.jpg", cap: "2023 — CAF selected «Emprendiendo la tradición» as the best project in Paraguay" },
       ],
     },
     method: {
