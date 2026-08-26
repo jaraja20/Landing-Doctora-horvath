@@ -28,6 +28,7 @@ export const copy = {
       cta1: "Conocé mi trayectoria",
       cta2: "Ver áreas de trabajo",
       badge: "CEO · Directora Técnica",
+      descriptors: "Dra. en Bioquímica | Máster internacional en Toxicología | Project Manager | Health Systems Strategist | CEO Laboratorio Horvath",
     },
     authority: [
       { v: "20+", l: "Años de experiencia" },
@@ -282,6 +283,7 @@ export const copy = {
       cta1: "Explore my journey",
       cta2: "See areas of work",
       badge: "CEO · Technical Director",
+      descriptors: "PhD in Biochemistry | International Master's in Toxicology | Project Manager | Health Systems Strategist | CEO Laboratorio Horvath",
     },
     authority: [
       { v: "20+", l: "Years of experience" },

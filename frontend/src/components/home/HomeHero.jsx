@@ -57,9 +57,11 @@ export const HomeHero = () => {
             <div className="absolute -top-4 -right-4 w-full h-full border-2 border-corp/15 rounded-md" aria-hidden="true" />
             <img src="/assets/gabriela-white.jpg" alt="Dra. Gabriela Horvath"
               className="relative w-full aspect-[4/5] object-cover object-top rounded-md" data-testid="hero-image" />
-            <div className="absolute -bottom-6 left-6 bg-white border border-black/10 shadow-lg px-6 py-4" data-testid="hero-badge">
+            <div className="absolute -bottom-6 left-4 right-4 sm:left-6 sm:right-auto sm:max-w-md bg-white border border-black/10 shadow-lg px-6 py-4" data-testid="hero-badge">
               <p className="text-sm font-bold text-black">{t.brand.name}</p>
-              <p className="text-xs font-semibold text-corp mt-0.5">{t.hero.badge}</p>
+              <p className="text-[10px] sm:text-[11px] font-semibold uppercase tracking-[0.12em] leading-relaxed text-corp mt-1.5" data-testid="hero-descriptors">
+                {t.hero.descriptors}
+              </p>
             </div>
           </motion.div>
         </div>
