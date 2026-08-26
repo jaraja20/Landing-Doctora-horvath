@@ -24,7 +24,7 @@ export const copy = {
     hero: {
       overline: "Dra. en Bioquímica · Liderazgo en salud",
       title: "Ciencia, estrategia y humanidad para transformar la salud.",
-      sub: "Más de **20 años** conectando diagnóstico, investigación y gestión para construir soluciones de salud con impacto real.",
+      sub: "Más de **20 años** conectando diagnóstico, investigación y gestión para **construir soluciones** de salud con **impacto real**.",
       cta1: "Conocé mi trayectoria",
       cta2: "Ver áreas de trabajo",
       badge: "CEO · Directora Técnica",
@@ -279,7 +279,7 @@ export const copy = {
     hero: {
       overline: "PhD in Biochemistry · Health Leadership",
       title: "Science, strategy and humanity to transform health.",
-      sub: "Over **20 years** connecting diagnostics, research and management to build health solutions with real impact.",
+      sub: "Over **20 years** connecting diagnostics, research and management to **build health solutions** with **real impact**.",
       cta1: "Explore my journey",
       cta2: "See areas of work",
       badge: "CEO · Technical Director",
