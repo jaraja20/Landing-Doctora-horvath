@@ -33,43 +33,51 @@ const groupDigits = (n, sep) => (sep ? n.toString().replace(/\B(?=(\d{3})+(?!\d)
 // original. Textos sin dígitos (p. ej. "Harvard") se muestran tal cual.
 export const CountUp = ({ value, duration = 1.6, delay = 0, className = "" }) => {
   const ref = useRef(null);
-  // amount: 0 = dispara apenas el elemento roza el viewport. Los navegadores
-  // embebidos (WhatsApp, Instagram, TikTok in-app) a veces reportan mal la
-  // intersección con márgenes más estrictos, dejando el contador en 0.
   const inView = useInView(ref, { once: true, amount: 0 });
+  const [manualInView, setManualInView] = useState(false);
   const match = String(value).match(/^(\D*)([\d.,]+)(\D*)$/);
   const [display, setDisplay] = useState(match ? `${match[1]}0${match[3]}` : value);
   const startedRef = useRef(false);
   const controlsRef = useRef(null);
 
+  const visible = inView || manualInView;
+
+  // Respaldo real (no un timer a ciegas): algunos navegadores embebidos
+  // (WhatsApp, Instagram, TikTok in-app) reportan mal el IntersectionObserver
+  // y el contador queda pegado en 0. Este chequeo manual por scroll usa la
+  // posición real del elemento, así que solo dispara cuando de verdad entra
+  // en pantalla — nunca antes de que el usuario llegue a esa sección.
   useEffect(() => {
-    if (!match) return undefined;
-
-    const start = () => {
-      if (startedRef.current) return;
-      startedRef.current = true;
-      const [, prefix, numStr, suffix] = match;
-      const sep = numStr.match(/[.,]/)?.[0] || null;
-      const target = parseInt(numStr.replace(/[.,]/g, ""), 10);
-      controlsRef.current = animate(0, target, {
-        duration,
-        delay,
-        ease: [0.16, 1, 0.3, 1],
-        onUpdate: (v) => setDisplay(`${prefix}${groupDigits(Math.round(v), sep)}${suffix}`),
-      });
+    if (manualInView || typeof window === "undefined") return undefined;
+    const check = () => {
+      const el = ref.current;
+      if (!el) return;
+      const rect = el.getBoundingClientRect();
+      if (rect.top < window.innerHeight && rect.bottom > 0) setManualInView(true);
     };
-
-    if (inView) start();
-    // Red de seguridad: si por alguna razón el navegador nunca reporta la
-    // intersección (frecuente en webviews embebidos), el contador arranca
-    // igual a los pocos segundos en vez de quedar pegado en 0.
-    const fallback = setTimeout(start, 2200);
-
+    check();
+    window.addEventListener("scroll", check, { passive: true });
+    window.addEventListener("resize", check);
     return () => {
-      clearTimeout(fallback);
-      controlsRef.current?.stop();
+      window.removeEventListener("scroll", check);
+      window.removeEventListener("resize", check);
     };
-  }, [inView]); // eslint-disable-line react-hooks/exhaustive-deps
+  }, [manualInView]);
+
+  useEffect(() => {
+    if (!match || !visible || startedRef.current) return undefined;
+    startedRef.current = true;
+    const [, prefix, numStr, suffix] = match;
+    const sep = numStr.match(/[.,]/)?.[0] || null;
+    const target = parseInt(numStr.replace(/[.,]/g, ""), 10);
+    controlsRef.current = animate(0, target, {
+      duration,
+      delay,
+      ease: [0.16, 1, 0.3, 1],
+      onUpdate: (v) => setDisplay(`${prefix}${groupDigits(Math.round(v), sep)}${suffix}`),
+    });
+    return () => controlsRef.current?.stop();
+  }, [visible]); // eslint-disable-line react-hooks/exhaustive-deps
 
   return (
     <span ref={ref} className={className}>
