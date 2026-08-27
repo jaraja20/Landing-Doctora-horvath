@@ -33,22 +33,42 @@ const groupDigits = (n, sep) => (sep ? n.toString().replace(/\B(?=(\d{3})+(?!\d)
 // original. Textos sin dígitos (p. ej. "Harvard") se muestran tal cual.
 export const CountUp = ({ value, duration = 1.6, delay = 0, className = "" }) => {
   const ref = useRef(null);
-  const inView = useInView(ref, { once: true, margin: "-80px" });
+  // amount: 0 = dispara apenas el elemento roza el viewport. Los navegadores
+  // embebidos (WhatsApp, Instagram, TikTok in-app) a veces reportan mal la
+  // intersección con márgenes más estrictos, dejando el contador en 0.
+  const inView = useInView(ref, { once: true, amount: 0 });
   const match = String(value).match(/^(\D*)([\d.,]+)(\D*)$/);
   const [display, setDisplay] = useState(match ? `${match[1]}0${match[3]}` : value);
+  const startedRef = useRef(false);
+  const controlsRef = useRef(null);
 
   useEffect(() => {
-    if (!inView || !match) return undefined;
-    const [, prefix, numStr, suffix] = match;
-    const sep = numStr.match(/[.,]/)?.[0] || null;
-    const target = parseInt(numStr.replace(/[.,]/g, ""), 10);
-    const controls = animate(0, target, {
-      duration,
-      delay,
-      ease: [0.16, 1, 0.3, 1],
-      onUpdate: (v) => setDisplay(`${prefix}${groupDigits(Math.round(v), sep)}${suffix}`),
-    });
-    return () => controls.stop();
+    if (!match) return undefined;
+
+    const start = () => {
+      if (startedRef.current) return;
+      startedRef.current = true;
+      const [, prefix, numStr, suffix] = match;
+      const sep = numStr.match(/[.,]/)?.[0] || null;
+      const target = parseInt(numStr.replace(/[.,]/g, ""), 10);
+      controlsRef.current = animate(0, target, {
+        duration,
+        delay,
+        ease: [0.16, 1, 0.3, 1],
+        onUpdate: (v) => setDisplay(`${prefix}${groupDigits(Math.round(v), sep)}${suffix}`),
+      });
+    };
+
+    if (inView) start();
+    // Red de seguridad: si por alguna razón el navegador nunca reporta la
+    // intersección (frecuente en webviews embebidos), el contador arranca
+    // igual a los pocos segundos en vez de quedar pegado en 0.
+    const fallback = setTimeout(start, 2200);
+
+    return () => {
+      clearTimeout(fallback);
+      controlsRef.current?.stop();
+    };
   }, [inView]); // eslint-disable-line react-hooks/exhaustive-deps
 
   return (
