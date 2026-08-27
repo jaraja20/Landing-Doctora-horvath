@@ -5,6 +5,7 @@ import { ChevronDown, Menu, X, ArrowUpRight, Network, ClipboardCheck, Briefcase,
 import { WhatsAppIcon } from "./WhatsAppIcon";
 import { useLang, scrollToId } from "../App";
 import { WHATSAPP_URL, wa } from "../i18n";
+import { REPLAY_INTRO_EVENT } from "./IntroSplash";
 
 const icons = { network: Network, chat: WhatsAppIcon, check: ClipboardCheck, briefcase: Briefcase, flask: FlaskConical };
 
@@ -54,6 +55,11 @@ export const Navbar = () => {
   const navigate = useNavigate();
   const location = useLocation();
 
+  const replayIntro = () => {
+    setMobileOpen(false);
+    window.dispatchEvent(new Event(REPLAY_INTRO_EVENT));
+  };
+
   const goContent = () => {
     setMobileOpen(false);
     if (location.pathname !== "/") {
@@ -65,7 +71,7 @@ export const Navbar = () => {
   return (
     <header className="fixed top-0 inset-x-0 z-50 bg-white/90 backdrop-blur-lg border-b border-black/[0.06]" data-testid="main-nav">
       <nav className="max-w-7xl mx-auto px-6 lg:px-10 h-20 flex items-center justify-between gap-6">
-        <Link to="/" className="flex items-center gap-3 shrink-0" data-testid="nav-logo" onClick={() => setMobileOpen(false)}>
+        <Link to="/" className="flex items-center gap-3 shrink-0" data-testid="nav-logo" onClick={replayIntro}>
           <img src="/assets/logo-gh.png" alt="GH" className="w-10 h-10" data-testid="nav-logo-icon" />
           <span className="hidden sm:block leading-tight">
             <span className="block text-sm font-bold text-black">{t.brand.name}</span>

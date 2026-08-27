@@ -6,6 +6,7 @@ import { copy } from "@/i18n";
 import { Navbar } from "@/components/Navbar";
 import { Footer } from "@/components/Footer";
 import { BackToTop } from "@/components/BackToTop";
+import { IntroSplash } from "@/components/IntroSplash";
 import Home from "@/pages/Home";
 import Trayectoria from "@/pages/Trayectoria";
 import Precedent from "@/pages/Precedent";
@@ -55,6 +56,7 @@ function App() {
 
   return (
     <LangContext.Provider value={{ t, lang, setLang }}>
+      <IntroSplash />
       <BrowserRouter>
         <ScrollToTop />
         <div className="bg-white min-h-screen" data-testid="landing-page">
