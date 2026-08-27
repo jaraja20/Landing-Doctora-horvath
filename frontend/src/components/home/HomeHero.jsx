@@ -15,6 +15,7 @@ export const HomeHero = () => {
   const words = t.hero.title.split(" ");
   const split = Math.ceil(words.length / 2);
   const lines = [words.slice(0, split).join(" "), words.slice(split).join(" ")];
+  const descriptorParts = t.hero.descriptors.split(" | ");
 
   return (
     <>
@@ -27,17 +28,22 @@ export const HomeHero = () => {
             <div className="relative w-full aspect-[4/5] rounded-md overflow-hidden">
               <img src="/assets/gabriela-frente.jpg" alt="Dra. Gabriela Horvath"
                 className="w-full h-full object-cover object-center" data-testid="hero-image" />
-              <div className="absolute inset-x-0 bottom-0 pt-24 sm:pt-28 pb-8 px-6 sm:px-8 bg-gradient-to-t from-navydeep/95 via-navydeep/60 to-transparent flex flex-col items-center text-center">
-                <p className="font-serif text-4xl sm:text-5xl font-bold uppercase tracking-wide leading-[1.08] text-white" data-testid="hero-name">
-                  {t.brand.name}
-                </p>
-                <p className="mt-6 max-w-xs text-[10px] sm:text-[11px] font-medium uppercase tracking-[0.15em] leading-relaxed text-white/70" data-testid="hero-descriptors">
-                  {t.hero.descriptors}
-                </p>
-                <p className="mt-4 text-[10px] sm:text-[11px] font-semibold uppercase tracking-[0.25em] text-cyanlight" data-testid="hero-role-badge">
-                  {t.hero.badge}
-                </p>
-              </div>
+              <p className="absolute inset-x-0 bottom-20 sm:bottom-24 px-6 font-serif text-4xl sm:text-5xl font-bold uppercase tracking-wide leading-[1.08] text-white text-center"
+                style={{ textShadow: "0 4px 24px rgba(0,0,0,0.5), 0 2px 8px rgba(0,0,0,0.45)" }}
+                data-testid="hero-name">
+                {t.brand.name}
+              </p>
+            </div>
+
+            <div className="relative z-10 -mt-8 sm:-mt-10 mx-4 sm:mx-8 rounded-xl border border-black/10 bg-white shadow-xl px-6 py-5" data-testid="hero-descriptors-note">
+              <p className="text-[10px] sm:text-[11px] font-medium uppercase tracking-[0.08em] leading-relaxed text-black/55 text-center">
+                {descriptorParts.map((seg, i) => (
+                  <span key={seg}>
+                    <strong className="font-semibold text-black">{seg}</strong>
+                    {i < descriptorParts.length - 1 && <span className="text-black/30 mx-1.5">|</span>}
+                  </span>
+                ))}
+              </p>
             </div>
           </motion.div>
 

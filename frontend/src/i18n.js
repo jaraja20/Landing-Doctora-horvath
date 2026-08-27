@@ -2,6 +2,9 @@ export const WHATSAPP_URL = "https://wa.me/595971175353";
 export const INSTAGRAM_URL = "https://www.instagram.com/dra_gabrielahorvath/";
 export const EMAIL = "dra.gabrielahorvath@gmail.com";
 export const HORVATH_CARE = "https://www.horvathcare.com";
+export const HORVATHCARE_EMPRESAS = "https://www.horvathcare.com/empresas";
+export const HORVATHCARE_PACIENTES = "https://www.horvathcare.com/pacientes";
+export const HORVATHCARE_HUB = "https://www.horvathcare.com/advanced-science-hub";
 export const LINKEDIN_URL = "https://www.linkedin.com/in/dra-gabriela-horvath-96530a40/";
 export const FACEBOOK_URL = "https://www.facebook.com/gabriela.horvath.545";
 
@@ -13,15 +16,16 @@ export const copy = {
     nav: {
       home: "Inicio",
       trajectory: "Trayectoria",
-      dropdown: "Proyectos y consultoría",
-      content: "Contenido",
+      dropdown: "Servicios",
+      content: "Prensa",
       contact: "Contactar",
-      menuLabel: "Proyectos y consultoría",
+      menuLabel: "Servicios",
     },
     dropdown: [
-      { icon: "network", title: "PRECEDENT™", desc: "El sistema que estructura la expansión en salud en entornos complejos.", price: null, cta: "Conocer el sistema", to: "/precedent" },
-      { icon: "chat", title: "Consultoría rápida", desc: "Sesión estratégica individual · 60 min · Formulario y evaluación previa.", price: "USD 350", cta: "Solicitar consultoría", wa: "Hola Dra. Gabriela, quiero solicitar una Consultoría Rápida (USD 350)." },
-      { icon: "check", title: "Diagnóstico estratégico PRECEDENT™", desc: "Factibilidad · Ruta recomendada · Diagrama del proyecto.", price: "USD 1.500", cta: "Presentar mi proyecto", wa: "Hola Dra. Gabriela, quiero presentar mi proyecto para un Diagnóstico Estratégico PRECEDENT™ (USD 1.500)." },
+      { icon: "network", title: "Consultoría estratégica PRECEDENT™", desc: "El sistema que estructura la expansión en salud en entornos complejos.", price: null, cta: "Conocer el sistema", to: "/precedent" },
+      { icon: "briefcase", title: "Salud laboral", desc: "Prevención, monitoreo y bienestar para entornos laborales más saludables.", price: null, cta: "Conocer más", href: HORVATHCARE_EMPRESAS },
+      { icon: "check", title: "Diagnóstico clínico", desc: "Perfiles y chequeos destacados para vos y tu familia.", price: null, cta: "Conocer más", href: HORVATHCARE_PACIENTES },
+      { icon: "flask", title: "Horvath Advanced Science Hub", desc: "Ciencia aplicada, innovación y generación de evidencia para transformar la salud.", price: null, cta: "Conocer más", href: HORVATHCARE_HUB },
     ],
     hero: {
       overline: "Dra. en Bioquímica · Liderazgo en salud",
@@ -85,12 +89,12 @@ export const copy = {
     },
     initiatives: {
       overline: "Proyectos",
-      title: "Proyectos que convierten conocimiento en acción",
+      title: "Servicios ofrecidos",
       cta: "Conocer el proyecto",
       items: [
-        { t: "Horvath Advanced Science Hub", d: "Ciencia aplicada, innovación y generación de evidencia para transformar la salud." },
-        { t: "Horvath Health Center", d: "Atención integral y diagnóstico avanzado con enfoque humano y excelencia." },
-        { t: "Salud Laboral 360°", d: "Prevención, monitoreo y bienestar para entornos laborales más saludables." },
+        { t: "Horvath Advanced Science Hub", d: "Ciencia aplicada, innovación y generación de evidencia para transformar la salud.", link: HORVATHCARE_HUB },
+        { t: "Horvath Health Center", d: "Atención integral y diagnóstico avanzado con enfoque humano y excelencia.", link: HORVATHCARE_PACIENTES },
+        { t: "Salud Laboral 360°", d: "Prevención, monitoreo y bienestar para entornos laborales más saludables.", link: HORVATHCARE_EMPRESAS },
       ],
       pandemic: { v: "30.000+", l: "Pacientes atendidos durante la pandemia · Laboratorio biomolecular, Aeropuerto Internacional Silvio Pettirossi" },
     },
@@ -285,15 +289,16 @@ export const copy = {
     nav: {
       home: "Home",
       trajectory: "Journey",
-      dropdown: "Projects & advisory",
-      content: "Content",
+      dropdown: "Services",
+      content: "Press",
       contact: "Contact",
-      menuLabel: "Projects & advisory",
+      menuLabel: "Services",
     },
     dropdown: [
-      { icon: "network", title: "PRECEDENT™", desc: "The system that structures health expansion in complex environments.", price: null, cta: "Discover the system", to: "/precedent" },
-      { icon: "chat", title: "Quick advisory", desc: "Individual strategic session · 60 min · Preliminary form and assessment.", price: "USD 350", cta: "Request advisory", wa: "Hola Dra. Gabriela, quiero solicitar una Consultoría Rápida (USD 350)." },
-      { icon: "check", title: "PRECEDENT™ Strategic Diagnosis", desc: "Feasibility · Recommended route · Project diagram.", price: "USD 1,500", cta: "Submit my project", wa: "Hola Dra. Gabriela, quiero presentar mi proyecto para un Diagnóstico Estratégico PRECEDENT™ (USD 1.500)." },
+      { icon: "network", title: "PRECEDENT™ Strategic Advisory", desc: "The system that structures health expansion in complex environments.", price: null, cta: "Discover the system", to: "/precedent" },
+      { icon: "briefcase", title: "Occupational Health", desc: "Prevention, monitoring and wellbeing for healthier work environments.", price: null, cta: "Learn more", href: HORVATHCARE_EMPRESAS },
+      { icon: "check", title: "Clinical Diagnostics", desc: "Featured profiles and checkups for you and your family.", price: null, cta: "Learn more", href: HORVATHCARE_PACIENTES },
+      { icon: "flask", title: "Horvath Advanced Science Hub", desc: "Applied science, innovation and evidence generation to transform health.", price: null, cta: "Learn more", href: HORVATHCARE_HUB },
     ],
     hero: {
       overline: "PhD in Biochemistry · Health Leadership",
@@ -357,12 +362,12 @@ export const copy = {
     },
     initiatives: {
       overline: "Projects",
-      title: "Projects that turn knowledge into action",
+      title: "Services offered",
       cta: "Discover the project",
       items: [
-        { t: "Horvath Advanced Science Hub", d: "Applied science, innovation and evidence generation to transform health." },
-        { t: "Horvath Health Center", d: "Integral care and advanced diagnostics with a human approach and excellence." },
-        { t: "Salud Laboral 360°", d: "Prevention, monitoring and wellbeing for healthier work environments." },
+        { t: "Horvath Advanced Science Hub", d: "Applied science, innovation and evidence generation to transform health.", link: HORVATHCARE_HUB },
+        { t: "Horvath Health Center", d: "Integral care and advanced diagnostics with a human approach and excellence.", link: HORVATHCARE_PACIENTES },
+        { t: "Salud Laboral 360°", d: "Prevention, monitoring and wellbeing for healthier work environments.", link: HORVATHCARE_EMPRESAS },
       ],
       pandemic: { v: "30,000+", l: "Patients attended during the pandemic · Biomolecular laboratory, Silvio Pettirossi International Airport" },
     },

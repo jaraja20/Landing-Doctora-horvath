@@ -1,7 +1,6 @@
 import { ArrowUpRight } from "lucide-react";
 import { Reveal, SectionTitle } from "../Reveal";
 import { useLang } from "../../App";
-import { HORVATH_CARE } from "../../i18n";
 
 export const Initiatives = () => {
   const { t } = useLang();
@@ -16,7 +15,7 @@ export const Initiatives = () => {
                 className="h-full flex flex-col border border-black/10 p-8 hover:border-corp/50 hover:-translate-y-1 transition-all duration-300 bg-white">
                 <h3 className="text-xl font-bold leading-snug text-corp">{item.t}</h3>
                 <p className="mt-4 text-sm font-light leading-relaxed text-black/55 flex-1">{item.d}</p>
-                <a href={HORVATH_CARE} target="_blank" rel="noopener noreferrer" data-testid={`initiative-link-${i + 1}`}
+                <a href={item.link} target="_blank" rel="noopener noreferrer" data-testid={`initiative-link-${i + 1}`}
                   className="group mt-8 inline-flex items-center gap-1.5 text-sm font-semibold text-corp underline underline-offset-8 decoration-corp/40 hover:decoration-corp transition-all w-fit">
                   {t.initiatives.cta}
                   <ArrowUpRight size={15} strokeWidth={2} className="transition-transform duration-200 group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />

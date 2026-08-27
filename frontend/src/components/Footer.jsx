@@ -1,7 +1,7 @@
 import { Linkedin, Facebook, Instagram, ArrowUpRight } from "lucide-react";
 import { Link, useNavigate, useLocation } from "react-router-dom";
 import { useLang, scrollToId } from "../App";
-import { LINKEDIN_URL, FACEBOOK_URL, INSTAGRAM_URL, HORVATH_CARE } from "../i18n";
+import { LINKEDIN_URL, FACEBOOK_URL, INSTAGRAM_URL, HORVATHCARE_EMPRESAS, HORVATHCARE_PACIENTES, HORVATHCARE_HUB } from "../i18n";
 
 const socials = [
   { href: LINKEDIN_URL, label: "LinkedIn", Icon: Linkedin, id: "linkedin" },
@@ -59,17 +59,17 @@ export const Footer = () => {
                   </Link>
                 </li>
                 <li>
-                  <a href={HORVATH_CARE} target="_blank" rel="noopener noreferrer" data-testid="footer-link-laboral" className={linkClass}>
+                  <a href={HORVATHCARE_EMPRESAS} target="_blank" rel="noopener noreferrer" data-testid="footer-link-laboral" className={linkClass}>
                     {t.footer.services.laboral}
                   </a>
                 </li>
                 <li>
-                  <a href={HORVATH_CARE} target="_blank" rel="noopener noreferrer" data-testid="footer-link-diagnostico" className={linkClass}>
+                  <a href={HORVATHCARE_PACIENTES} target="_blank" rel="noopener noreferrer" data-testid="footer-link-diagnostico" className={linkClass}>
                     {t.footer.services.diagnostico}
                   </a>
                 </li>
                 <li>
-                  <a href={HORVATH_CARE} target="_blank" rel="noopener noreferrer" data-testid="footer-link-hub" className={linkClass}>
+                  <a href={HORVATHCARE_HUB} target="_blank" rel="noopener noreferrer" data-testid="footer-link-hub" className={linkClass}>
                     {t.footer.services.hub}
                   </a>
                 </li>

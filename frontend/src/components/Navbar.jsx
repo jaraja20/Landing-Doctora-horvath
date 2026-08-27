@@ -1,12 +1,12 @@
 import { useState } from "react";
 import { Link, useNavigate, useLocation } from "react-router-dom";
 import { motion, AnimatePresence } from "framer-motion";
-import { ChevronDown, Menu, X, ArrowUpRight, Network, ClipboardCheck } from "lucide-react";
+import { ChevronDown, Menu, X, ArrowUpRight, Network, ClipboardCheck, Briefcase, FlaskConical } from "lucide-react";
 import { WhatsAppIcon } from "./WhatsAppIcon";
 import { useLang, scrollToId } from "../App";
 import { WHATSAPP_URL, wa } from "../i18n";
 
-const icons = { network: Network, chat: WhatsAppIcon, check: ClipboardCheck };
+const icons = { network: Network, chat: WhatsAppIcon, check: ClipboardCheck, briefcase: Briefcase, flask: FlaskConical };
 
 const DropdownCard = ({ items, onClose, mobile = false }) => (
   <div className={mobile ? "flex flex-col gap-2 pl-3 border-l-2 border-corp/20" : "flex flex-col p-3"}>
@@ -29,9 +29,17 @@ const DropdownCard = ({ items, onClose, mobile = false }) => (
           </span>
         </div>
       );
-      return item.to ? (
-        <Link key={item.title} to={item.to} onClick={onClose} data-testid={`dropdown-${item.title.toLowerCase().replace(/[^a-z0-9]/g, "-")}`}>{inner}</Link>
-      ) : (
+      if (item.to) {
+        return (
+          <Link key={item.title} to={item.to} onClick={onClose} data-testid={`dropdown-${item.title.toLowerCase().replace(/[^a-z0-9]/g, "-")}`}>{inner}</Link>
+        );
+      }
+      if (item.href) {
+        return (
+          <a key={item.title} href={item.href} target="_blank" rel="noopener noreferrer" onClick={onClose} data-testid={`dropdown-${item.title.toLowerCase().replace(/[^a-z0-9]/g, "-")}`}>{inner}</a>
+        );
+      }
+      return (
         <a key={item.title} href={wa(item.wa)} target="_blank" rel="noopener noreferrer" onClick={onClose} data-testid={`dropdown-${item.title.toLowerCase().replace(/[^a-z0-9]/g, "-")}`}>{inner}</a>
       );
     })}
