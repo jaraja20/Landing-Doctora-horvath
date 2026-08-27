@@ -1,5 +1,5 @@
 import { ArrowUpRight } from "lucide-react";
-import { Reveal, SectionTitle } from "../Reveal";
+import { Reveal, SectionTitle, CountUp } from "../Reveal";
 import { useLang } from "../../App";
 
 export const Initiatives = () => {
@@ -27,7 +27,7 @@ export const Initiatives = () => {
 
         <Reveal delay={0.15}>
           <div className="mt-14 border border-black/10 p-8 flex flex-col sm:flex-row sm:items-center gap-4 sm:gap-10" data-testid="pandemic-stat">
-            <p className="text-4xl sm:text-5xl font-bold tracking-tight text-corp shrink-0">{t.initiatives.pandemic.v}</p>
+            <CountUp value={t.initiatives.pandemic.v} className="text-4xl sm:text-5xl font-bold tracking-tight text-corp shrink-0" />
             <p className="text-sm font-light leading-relaxed text-black/60 max-w-xl">{t.initiatives.pandemic.l}</p>
           </div>
         </Reveal>

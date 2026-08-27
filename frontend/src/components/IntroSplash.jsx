@@ -3,6 +3,7 @@ import { motion, AnimatePresence } from "framer-motion";
 import { useLang } from "../App";
 
 export const REPLAY_INTRO_EVENT = "gh:replay-intro";
+export const INTRO_EXIT_EVENT = "gh:intro-exit";
 
 const EASE = [0.16, 1, 0.3, 1];
 
@@ -39,10 +40,15 @@ export const IntroSplash = () => {
   useEffect(() => {
     setStage("draw");
     document.body.style.overflow = "hidden";
+    window.__ghIntroExited = false;
     const timers = [
       setTimeout(() => setStage("logo"), 800),
       setTimeout(() => setStage("wordmark"), 1300),
-      setTimeout(() => setStage("exit"), 2650),
+      setTimeout(() => {
+        setStage("exit");
+        window.__ghIntroExited = true;
+        window.dispatchEvent(new Event(INTRO_EXIT_EVENT));
+      }, 2650),
       setTimeout(() => setStage("hidden"), 3250),
     ];
 
